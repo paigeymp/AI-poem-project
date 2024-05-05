@@ -1,3 +1,27 @@
 body {
-  background: purple;
+  text-align: center;
+  font-family: "Briem Hand", cursive;
+  background: blueviolet;
+  color: white;
+  margin: 100px;
+  padding: 20px;
+}
+
+h1.title {
+  font-size: 48px;
+}
+
+footer {
+  font-family: monospace;
+  padding-top: 100px;
+}
+
+@media (max-width: 900px) {
+  h1.title {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
 }
