@@ -62,6 +62,7 @@ form {
 
 footer {
   font-family: monospace;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -76,10 +77,13 @@ footer {
     font-size: 10px;
   }
 
-  .submit-button,
   .instructions,
   .poem {
     font-size: 12px;
     padding: 12px;
+  }
+
+  .submit-button {
+    font-size: 20px;
   }
 }
