@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter poem topic"
@@ -30,7 +31,7 @@
           />
           <input type="submit" class="submit-button" value="🔎" />
         </form>
-        <div class="poem">The poem</div>
+        <div class="poem" id="poem">The poem</div>
       </main>
       <footer>
         This AI project was coded by Paige Powell and is
@@ -41,6 +42,6 @@
         <a href="https://generatepoem.netlify.app/" target="_blank">netlify</a>
       </footer>
     </div>
-    <script src="src/idex.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
