@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Comfortaa:wght@300;400;500;600;700&family=Noto+Color+Emoji&family=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -21,19 +21,22 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter poem topic"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" value="🔎" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Hi there!🤖 What's your poem topic?"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" value="Enter" />
+          </form>
+          <div class="hint">i.e. love, flowers, summer</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by Paige Powell and is

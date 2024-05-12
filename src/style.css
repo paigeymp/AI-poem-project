@@ -1,7 +1,11 @@
 body {
-  font-family: "Briem Hand", cursive;
-  background-color: rgb(199, 178, 218);
-  color: rgb(55, 67, 64);
+  font-family: "Josefin Sans", cursive;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 168, 168) 10%,
+    rgb(252, 255, 0) 100%
+  );
+  color: #e46161;
 }
 
 .container {
@@ -13,24 +17,27 @@ header {
   margin-bottom: 30px;
 }
 
-.title {
-  font-size: 48px;
+h1.title {
+  font-size: 30px;
   line-height: 1.5;
   font-weight: 800;
   text-align: center;
 }
 
-form {
-  padding: 30px;
-  background-color: white;
+.form-container {
+  background-color: #f8f398;
   border-radius: 10px;
-  display: flex;
+  padding: 30px;
   margin-bottom: 30px;
+}
+
+form {
+  display: flex;
 }
 
 .instructions {
   padding: 16px;
-  border: 1px solid rgb(117, 117, 117);
+  border: 1px solid #cbf078;
   width: 80%;
   font-size: 16px;
   border-radius: 50px;
@@ -39,25 +46,45 @@ form {
 
 .submit-button {
   margin-left: 5px;
-  background-color: white;
-  border: none;
+  background-color: rgb(255, 255, 255);
   width: 150px;
   font-size: 16px;
   border-radius: 50px;
+  border: 1px solid #cbf078;
   padding: 14px 24px;
-  font-family: "Noto Color Emoji", cursive;
-  font-size: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+
+  color: #f1b963;
 }
 
 .poem {
   font-size: 16px;
-  background-color: white;
+  background-color: #f8f398;
   padding: 20px;
   line-height: 24px;
   border-left: 3px solid grey;
-  box-shadow: 8px 20px 60px rgba(65, 50, 100, 0.08);
+  box-shadow: 8px 20px 60px rgb(245, 213, 125);
   border-radius: 10px;
   margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.generating {
+  animation: blink 1s step-start 0s infinite;
 }
 
 footer {
