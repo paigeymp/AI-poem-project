@@ -67,8 +67,8 @@ form {
   background-color: #f8f398;
   padding: 20px;
   line-height: 24px;
-  border-left: 3px solid grey;
-  box-shadow: 8px 20px 60px rgb(245, 213, 125);
+  border-left: 3px solid rgb(245, 213, 125);
+  box-shadow: 8px 20px 60px;
   border-radius: 10px;
   margin-bottom: 30px;
 }
